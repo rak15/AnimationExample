@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="260dp"
+        android:layout_height="260dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CardFlip Animation"
+        android:layout_marginTop="8dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_margin="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CircularReveal Animation" />
+    <TextView
+        android:id="@+id/text_view_circular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        style="?android:attr/textAppearanceLarge"
+        android:text="@string/circular_reveal_description"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/button100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Circular Reveal"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

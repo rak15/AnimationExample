@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AnimationExample</string>
+    <string name="viewPropertyAnimatorDescription"><b>ViewPropertyAnimator</b> class enables automatic and optimized animation of select properties
+        on View objects. If only one or two properties on a View object are being animated, then using an ObjectAnimator
+        is fine; the property setters called by ObjectAnimator are well equipped to do the right thing to set the property
+        and invalidate the view appropriately. But if several properties are animated simultaneously, or if you just want a more
+        convenient syntax to animate a specific property, then ViewPropertyAnimator might be more well-suited to the task.\n \n
+        This class may provide better performance for several simultaneous animations, because it will optimize invalidate
+        calls to take place only once for several properties instead of each animated property independently causing its own
+        invalidation. Also, the syntax of using this class could be easier to use because the caller need only tell the View
+        object which property to animate, and the value to animate either to or by, and this class handles the details of
+        configuring the underlying Animator class and starting it.</string>
+    <string name="description_image_1">front view of card</string>
+    <string name="card_back_title">card back</string>
+    <string name="card_back_description">The card flip animation shown here uses FragmentTransaction, which is available for Android 3.0 (API level 11) and higher</string>
+    <string name="circular_reveal_description"><b>ViewAnimationUtils.createCircularReveal()</b> method enables you to animate
+        a clipping circle to reveal or hide a view</string>
+</resources>

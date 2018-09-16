@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+    <set android:ordering="together">
+        <!--for radius if value is without dp then it will be pixel-->
+        <objectAnimator
+        android:propertyName="radius"
+        android:duration="4000"
+        android:valueType="floatType"
+        android:valueFrom="0dp"
+        android:valueTo="300dp" />
+
+        <objectAnimator
+            android:propertyName="color"
+            android:duration="4000"
+            android:valueType="colorType"
+            android:valueFrom="@android:color/holo_red_dark"
+            android:valueTo="@android:color/holo_orange_light"/>
+    </set>
+
+    <objectAnimator
+        android:propertyName="radius"
+        android:duration="3000"
+        android:valueType="floatType"
+        android:valueFrom="300dp"
+        android:valueTo="0dp" />
+</set>
