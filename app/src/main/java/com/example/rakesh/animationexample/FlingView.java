@@ -27,7 +27,7 @@ public class FlingView extends AppCompatImageView {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
-                // Create an animation that rotates around the views X value.
+                // Create an animation that rotates around the view's X axis.
                 FlingAnimation fling = new FlingAnimation(
                         this, DynamicAnimation.ROTATION_X);
                 // Set parameters and constraints for the animation.

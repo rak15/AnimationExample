@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimationWithActivity1">
+
+    <Button
+        android:id="@+id/button_activity_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="191dp"
+        android:text="Activity Transition" />
+
+    <ImageView
+        android:id="@+id/image_activity_1"
+        android:layout_width="114dp"
+        android:layout_height="111dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/thumb1"
+        android:transitionName="shared1"
+        tools:ignore="UnusedAttribute" />
+
+    <Button
+        android:id="@+id/button_share_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="131dp"
+        android:text="Share 1 element" />
+
+    <Button
+        android:id="@+id/button_share_multi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:text="Share multiple elements" />
+
+    <ImageView
+        android:id="@+id/image_activity_1_2"
+        android:layout_width="83dp"
+        android:layout_height="84dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/image_activity_1"
+        android:layout_marginEnd="55dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:transitionName="shared2"
+        tools:ignore="UnusedAttribute" />
+</RelativeLayout>

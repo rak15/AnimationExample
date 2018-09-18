@@ -23,7 +23,13 @@
         <activity android:name=".AnimationDrawableActivity" />
         <activity android:name=".RevealHideViewCrossfadeActivity" />
         <activity android:name=".RevealHideViewCardflipActivity" />
-        <activity android:name=".MoveViewAnimationActivity"></activity>
+        <activity android:name=".MoveViewAnimationActivity" />
+        <activity android:name=".ZoomAnimationActivity" />
+        <activity android:name=".AutoAnimateLayoutActivity" />
+        <activity android:name=".LayoutChangeWithTransitionActivity" />
+        <activity android:name=".AnimationWithActivity1" />
+        <activity android:name=".AnimationWithActivity2" />
+        <activity android:name=".AnimatedVectorDrawableActivity"></activity>
     </application>
 
 </manifest>

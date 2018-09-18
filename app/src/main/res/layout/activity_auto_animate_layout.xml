@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:animateLayoutChanges="true"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AutoAnimateLayoutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <Button
+            android:id="@+id/button101"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add view"/>
+        <Button
+            android:id="@+id/button102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remove View"/>
+        <Button
+            android:id="@+id/button103"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gone"/>
+        <Button
+            android:id="@+id/button104"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="visible"/>
+    </LinearLayout>
+</LinearLayout>

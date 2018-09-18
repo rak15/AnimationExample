@@ -10,7 +10,9 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+import static android.support.animation.SpringForce.DAMPING_RATIO_HIGH_BOUNCY;
 import static android.support.animation.SpringForce.STIFFNESS_LOW;
+import static android.support.animation.SpringForce.STIFFNESS_VERY_LOW;
 
 public class SpringView extends AppCompatImageView {
     public SpringView(Context context) {
@@ -33,11 +35,14 @@ public class SpringView extends AppCompatImageView {
             case MotionEvent.ACTION_DOWN:
                 // Create a spring animation along the view's Y position.
                 // Let resting position be at the view's current Y position.
-                final SpringAnimation anim = new SpringAnimation(this,
-                        (FloatPropertyCompat) DynamicAnimation.Y, this.getY())
+                final SpringAnimation anim = new SpringAnimation(this, DynamicAnimation.Y, this.getY())
                         .setStartVelocity(10000); // In pixels per second.
                 // Low stiffness makes the spring bouncy.
-                anim.getSpring().setStiffness(STIFFNESS_LOW);
+                anim.getSpring()
+                        .setStiffness(STIFFNESS_VERY_LOW) //more stiffness means more tight spring
+                        //damping ratio will determine how bouncy the spring is near its resting
+                        // position ('UNDAMPED' will keep object bouncing forever)
+                        .setDampingRatio(DAMPING_RATIO_HIGH_BOUNCY);
                 anim.start();
                 break;
             default:

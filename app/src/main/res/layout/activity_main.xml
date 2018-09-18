@@ -17,55 +17,90 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Open View_Animation" />
+            android:text="View_Animation" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Open Property_Animation" />
+            android:text="Property_Animation" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Open Property_Animation_Xml" />
+            android:text="Property_Animation_Xml" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Open Physics_Animation" />
+            android:text="Physics_Animation" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Open Animation_Drawable" />
+            android:text="Animation_Drawable" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Open Reveal_Hide_View_Crossfade" />
+            android:text="Reveal_Hide_View_Crossfade" />
 
         <Button
             android:id="@+id/button7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Open Reveal_Hide_View_Cardflip" />
+            android:text="Reveal_Hide_View_Cardflip" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Open Move View Animation"
+            android:text="Move_View_Animation"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zoom_Animation"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto_Animate_Layout"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animate_Layout_Changes_Transition"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change_Activity_With_Animation"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animated_Vector_Drawable_Activity"
             android:layout_marginTop="16dp"/>
     </LinearLayout>
 
