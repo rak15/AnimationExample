@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Viewport is the canvas on which vector path is drawn. Path data is related to viewport size.
+Viewport provides the coordinate system for path data of vector.
+Viewport size has nothing to do with actual drawable size which is drawn on the screen. For that width and height are used-->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:width="120dp"
@@ -6,6 +9,13 @@
     android:viewportWidth="32"
     android:viewportHeight="32">
 
+    <!-- PivotX is the coordinate of the centerX of rotation. Expressed either: in pixels relative to
+    the object's left edge (such as "5"), in percentage relative to the object's left edge (such as "5%"),
+     or in percentage relative to the parent container's left edge (such as "5%p")-->
+
+    <!-- PivotY is the coordinate of the centerY of rotation. Expressed either: in pixels relative to
+    the object's top edge (such as "5"), in percentage relative to the object's top edge (such as "5%"),
+     or in percentage relative to the parent container's top edge (such as "5%p")-->
     <group
         android:name="groupTickCross"
         android:pivotX="12"
